@@ -1,0 +1,219 @@
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+}
+
+#login, #loading, #resume {
+	display: inline;
+	padding: 20px;
+}
+
+button {
+	padding: 10px 20px;
+	border: none;
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #555;
+}
+
+
+.myimg{
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 300px;
+	height: 200px;
+}
+#resume-template{
+	display: none;
+}
+#resume button {
+	margin-top: 20px;
+}
+
+
+
+.color-selector-main {
+    position: static;
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+    -ms-flex-order: 2;
+    order: 2;
+    padding: 5px 0 0;
+}
+
+.color-selector-main{
+    margin: 0 auto 20px;
+}
+.color-selector-main {
+    display: -ms-flexbox;
+    display: flex;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    transition: color 0.2s, background-color .25s, border-color .5s, opacity .25s;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+body {
+    margin: 0;
+    height: 100%;
+    line-height: inherit;
+}
+
+
+.color-list-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ul {
+    list-style: none;
+}
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+.color-selector-reset {
+    background-color: rgba(0,0,0,0);
+}
+.color-selector .label, .color-selector-reset {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 53px;
+    height: 38px;
+    position: relative;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 5px;
+    padding: 1px;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+    border-radius: 0;
+}
+
+
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+ 
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+ul {
+    list-style: none;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+
+label {
+    cursor: default;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+
+
+.color-selector .color-selector-radio {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+}
+
+
+.color-selector {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    line-height: inherit;
+}
