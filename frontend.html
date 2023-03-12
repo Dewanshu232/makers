@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Automatic Resume Maker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+
+	<link rel="stylesheet" href="frontend.css"/>
+    
+</head>
+
+
+
+<body>
+    <header>
+		<h1>Automatic Resume Maker</h1>
+	</header>
+    <div class="container" id="resume">
+    <p class="text-center">by Dewanshu</p>
+    <div class="row">
+
+        <div class="col-md-6">
+            <h3>Personal information</h3>
+
+            <div class="form-grp ">
+                <label for="name-field">YOUR NAME</label>
+                <input type="text" id="name-field" class="form-control" placeholder="Enter here">
+            </div>
+
+
+            <div class="form-grp mt-2">
+                <label for="contact-field">YOUR CONTACT</label>
+                <input type="text" id="contact-field" class="form-control" placeholder="Enter here">
+            </div>
+
+            <div class="form-grp mt-2">
+                <label for="address-field">YOUR ADDRESS</label>
+                <textarea  id="address-field" class="form-control" placeholder="Enter here" rows="5"></textarea>
+            </div>
+
+            <p class="text-secondary my-3">Important handle links</p>
+            
+            <div class="form-grp mt-2">
+                <label for="fb-field">FACEBOOK handle</label>
+                <input type="text" id="fb-field" class="form-control" placeholder="Enter here">
+            </div>
+            <div class="form-grp mt-2">
+                <label for="ig-field">instagram handle</label>
+                <input type="text" id="ig-field" class="form-control" placeholder="Enter here">
+            </div>
+            <div class="form-grp mt-2">
+                <label for="lnk-field">linkedin handle</label>
+                <input type="text" id="lnk-field" class="form-control" placeholder="Enter here">
+            </div>
+
+
+            <div class="form-grp mt-2">
+                <label for="lnk-field">Your Formal image</label>
+                
+            </div>
+            <div class="mt-2">
+                <input type="file" accept="image/*" onchange="loadFile(event)">
+                    <p><img id="output" width="300"/></p>
+              <script>
+                var loadFile = function(event) 
+                {
+                  let flag = 1;
+                var image = document.getElementById('output');
+                image.src=URL.createObjectURL(event.target.files[0]);
+                };
+              </script>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="col-md-6">
+            <h3>Personal information</h3>
+
+            <div class="form-grp mt-2">
+                <label for="">Objective</label>
+                <textarea  id="obj-field" class="form-control" placeholder="Enter here" rows="5"></textarea>
+            </div>
+
+            <div class="form-grp mt-2" id="WE">
+                <label for="">Work experience</label>
+                <textarea class="form-control wefield" placeholder="Enter here" rows="3"></textarea>
+           
+                <div class="container text-center mt-2"id="addwebtn">
+                <button onclick="addnewWE()" class="btn  btn-primary btn-small">ADD</button>
+                </div>
+            </div>
+
+            <div class="form-grp mt-2" id="AQ">
+                <label for="">Academic Qualification</label>
+                <textarea  class="form-control aqfield" placeholder="Enter here" rows="3" ></textarea>
+           
+                <div class="container text-center mt-2 " id="addaqbtn">
+                <button onclick="addnewAQ()" class="btn  btn-primary btn-small">ADD</button>
+                </div>
+            </div>
+        </div> 
+       <div class="text-center">
+        <h6 for="colorpicker">Get Resume in color:</h6>
+        <input type="color" class="text-center "id="colorpicker" value="#0000ff">
+      </div>
+        
+
+
+    <!--resume template-->
+
+
+   
+    <div class="container" id="resume-template">
+        <div class="row" >
+       
+         <div class="col-md-4 text-center py-4 background" id="backcol">
+            <!--first col-->
+            <img id="imgT" class ="img-fluid myimg" src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="">
+            
+            <div class="container">
+                <p id="nameT1"> Dewanshu Soni</p>
+                <p id="contactT"> +91 9672739060</p>
+                <p id="addressT"> Street:  107, Hari Nagar, Mathura Rd Main Road
+                    City:   Delhi</p>
+
+                 <hr>
+                 <p id="fbT"><a href="https://www.youtube.com/watch?v=Cz9OZLw5QTs"> https://www.youtube.com/watch?v=Cz9OZLw5QTs</a></p>
+                 <p id="igT"><a href="https://www.youtube.com/watch?v=Cz9OZLw5QTs"> https://www.facebook.com</a></p>
+                 <p id="lnkT"><a href="#1"> https://www.facebook.com</a></p>
+            </div>
+            
+         </div>
+
+
+         <div class="col-md-8 py-5">
+            <!--second col-->
+
+            <h1 id="nameT2" class="text-center" style="font-weight:800">Dewanshu Soni</h1>
+
+
+            <div class="card">
+                <div class="card-header background" id="backcol1" style="font-weight: 900;">
+                    <h3>Objective</h3>
+                </div>
+                <div class="card-body">
+                   <p id="objT">In philosophy, objectivity is the concept of truth independent from individual subjectivity. A proposition is considered to have objective truth when its truth conditions are met without bias caused by the mind of a sentient being</p>
+                </div>
+
+
+                <div class="card-header background" id="backcol2">
+                    <h3 id="backcol">Work Experience</h3>
+                </div>
+                <div class="card-body">
+                   <ul id="weT">
+                    <li>
+                        In philosophy, objectivity is the concept of truth independent from
+                    </li>
+                    <li>
+                        In philosophy, objectivity is the concept of truth independent from
+                    </li>
+                    <li>
+                        In philosophy, objectivity is the concept of truth independent from
+                    </li>
+                   </ul>
+                </div>
+
+                <div class="card-header background" id="backcol3">
+                    <h3>Academic Qualification</h3>
+                </div>
+                <div class="card-body">
+                   <ul id="aqT">
+                    <li>
+                        In philosophy, objectivity is the concept of truth independent from
+                    </li>
+                    <li>
+                        In philosophy, objectivity is the concept of truth independent from
+                    </li>
+                    <li>
+                        In philosophy, objectivity is the concept of truth independent from
+                    </li>
+                   </ul>
+                </div>
+
+
+               
+
+
+            </div>
+            <div class="container text-center mt-3">
+                <button onclick="printResume()" class="btn background" id="backcol4">Print Resume</button>
+            </div>
+         </div>
+         
+
+        </div>
+    </div>
+
+    
+      
+      
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+	<script src="frontend.js"></script>
+
+	
+	
+</body>
+</html>
